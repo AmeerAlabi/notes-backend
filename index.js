@@ -49,7 +49,7 @@ app.put('/notes/:id', (req, res) => {
     const note = notes.find(note => note.id === id);
 
     if (!note) {
-        return res.status(404).json({ error: 'Note not found' });
+        return res.status(403).json({ error: 'Notes not found' });
     }
 
     if (!title || !content) {
