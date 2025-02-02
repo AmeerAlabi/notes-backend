@@ -11,7 +11,7 @@ let idCounter = 1;
 
 const port = 3000
 
-// post a note 
+// post
 app.post('/notes' , (req , res) => {
 
     const {title , content} = req.body
