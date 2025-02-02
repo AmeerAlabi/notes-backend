@@ -25,7 +25,7 @@ app.post('/notes' , (req , res) => {
 
 })
 
-// get all notes
+// get all 
 
 app.get('/notes' , (req, res) => {
     res.status(200).json(notes);
